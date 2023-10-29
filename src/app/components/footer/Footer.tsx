@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="justify-between items-center gap-12 md:flex">
                     <div className="flex-1 max-w-lg pixel-font">
                         <p>
-                            japones (The Pokémon Company) © x IDE © Todos os direitos reservados.
+                            株式会社ポケモン (The Pokémon Company) © x IDE © Todos os direitos reservados.
                         </p>
                         <p>
                             Termos de Uso | Política de Privacidade | Política de Cookies
