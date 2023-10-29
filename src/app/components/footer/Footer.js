@@ -1,15 +1,14 @@
-import React from 'react';
 import IconBar from './IconBar';
-import Image from 'next/image';
 import IDEPixelLogo from '../../../../public/img/logo-pixelado-branco.png';
-import '../../styles/font.css';
+import Image from 'next/image';
+import React from 'react';
 
 export default function Footer() {
   return (
     <footer className="p-14 bg-zinc-700">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center">
         <IconBar />
-        <div className="pixel-font text-center">
+        <div className="text-center">
           <p className="mt-5">株式会社ポケモン (The Pokémon Company) © x IDE © Todos os direitos reservados.</p>
           <p className="mt-3">Termos de Uso | Política de Privacidade | Política de Cookies</p>
         </div>

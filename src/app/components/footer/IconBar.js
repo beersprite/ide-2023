@@ -1,9 +1,9 @@
-import React from 'react';
-import PokemonLogo from '../../../../public/img/logos/pokemon-logo.png';
-import InstaLogo from '../../../../public/img/logos/instagram-logo.png';
 import IDELogo from '../../../../public/img/logos/ide-logo.png';
-import LinkedinLogo from '../../../../public/img/logos/linkedin-logo.png';
 import Image from 'next/image';
+import InstaLogo from '../../../../public/img/logos/instagram-logo.png';
+import LinkedinLogo from '../../../../public/img/logos/linkedin-logo.png';
+import PokemonLogo from '../../../../public/img/logos/pokemon-logo.png';
+import React from 'react';
 
 export default function IconBar() {
   return (

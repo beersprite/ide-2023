@@ -1,8 +1,5 @@
-import { Inter } from 'next/font/google';
 import './globals.css';
 import Footer from './components/footer/Footer';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'PokéIDEx',
@@ -11,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         {children}
         <Footer />
       </body>
