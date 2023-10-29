@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
             <div className="mt-10 justify-end sm:flex">
                 <a href="https://google.com/">
-                    <Image src={IDEPixelLogo} alt="IDE logo"/>
+                    <Image src={IDEPixelLogo} alt="IDE logo" className="w-3/4"/>
                 </a>
             </div>
 
