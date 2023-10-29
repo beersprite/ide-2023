@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="p-14 bg-zinc-700">
+    <footer className="p-14 bg-grey">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center">
         <IconBar />
         <div className="text-center">
