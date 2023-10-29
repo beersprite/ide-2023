@@ -6,8 +6,8 @@ import '../../styles/font.css';
 
 export default function Footer() {
     return (
-        <footer className="p-14 bg-zinc-800">
-            <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-between">
+        <footer className="p-14 bg-neutral-800">
+            <div className="max-w-screen-xl mx-auto flex flex-col items-center">
                     <IconBar/>
                     <div className="pixel-font text-center">
                         <p className="mt-5">
@@ -19,11 +19,8 @@ export default function Footer() {
                 </div>
             </div>
             <div className="mt-10 justify-end sm:flex">
-                <a href="https://google.com/">
-                    <Image src={IDEPixelLogo} alt="IDE logo" className="w-3/4"/>
-                </a>
+                <Image src={IDEPixelLogo} alt="IDE logo" width="87"/>
             </div>
-
         </footer>
     )
 }
