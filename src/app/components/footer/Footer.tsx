@@ -6,7 +6,7 @@ import '../../styles/font.css';
 
 export default function Footer() {
     return (
-        <footer className="p-14 bg-neutral-800">
+        <footer className="p-14 bg-zinc-700">
             <div className="max-w-screen-xl mx-auto flex flex-col items-center">
                     <IconBar/>
                     <div className="pixel-font text-center">
