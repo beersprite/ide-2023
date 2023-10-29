@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'PixelFont';
+    src: url('../../../public/fonts/uni05_53.ttf') format('truetype');
+
+}
+
+.pixel-font {
+    font-family: 'PixelFont';
+    color: white;
+}
