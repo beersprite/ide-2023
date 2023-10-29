@@ -5,6 +5,7 @@
 }
 
 .pixel-font {
-    font-family: 'PixelFont';
+    font-family: 'PixelFont', monospace;
     color: white;
+    font-size: 12px;
 }
