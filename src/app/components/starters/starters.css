@@ -1,0 +1,3 @@
+.imagemEspelhada{
+    transform: scaleX(-1);
+}
