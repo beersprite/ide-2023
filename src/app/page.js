@@ -1,7 +1,11 @@
+import Footer from './components/footer/Footer';
+import Inicio from './components/Inicio';
+
 export default function Home() {
   return (
-    <h1>
-      Olá, mundo!
-    </h1>
-  )
+    <>
+      <Inicio />
+      <Footer />
+    </>
+  );
 }

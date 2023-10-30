@@ -1,5 +1,15 @@
+import { Press_Start_2P } from 'next/font/google';
+import localFont from 'next/font/local';
+
 import './globals.css';
-import Footer from './components/footer/Footer';
+
+const pixelFont = localFont({ src: '../../public/fonts/uni05_53.ttf' });
+
+const pressStart2P = Press_Start_2P({
+  weight: '400',
+  preload: false,
+  variable: '--font-title',
+});
 
 export const metadata = {
   title: 'PokéIDEx',
@@ -8,10 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-        <Footer />
-      </body>
+      <body className={`${pixelFont.className} ${pressStart2P.variable}`}>{children}</body>
     </html>
   );
 }

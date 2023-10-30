@@ -2,28 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'PixelFont';
-  src: url('../../public/fonts/uni05_53.ttf') format('truetype');
-}
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer utilities {
+  .hover-scale {
+    transform: scale(1);
+    transition: transform 0.3s;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  font-family: 'PixelFont', monospace;
-  font-size: 12px;
+  .hover-scale:hover {
+    transform: scale(1.1);
+  }
+
+  .pixelated {
+    image-rendering: pixelated;
+  }
 }
