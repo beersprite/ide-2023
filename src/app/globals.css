@@ -2,24 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'PixelFont';
-  src: url('../../public/fonts/uni05_53.ttf') format('truetype');
-}
+@layer utilities {
+  .hover-scale {
+    transform: scale(1);
+    transition: transform 0.3s;
+  }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  .hover-scale:hover {
+    transform: scale(1.1);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .pixelated {
+    image-rendering: pixelated;
   }
 }
+<<<<<<< HEAD
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -36,3 +33,5 @@ body {
 .border-l-3{border-left-width:3px;}
 .border-t-3{border-top-width:3px;}
 .border-b-3{border-bottom-width:3px;}
+=======
+>>>>>>> 9c5115c0bfeb1f867450c7fcc985e0bfd84b19d8
