@@ -16,7 +16,6 @@
     image-rendering: pixelated;
   }
 }
-<<<<<<< HEAD
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -33,5 +32,3 @@ body {
 .border-l-3{border-left-width:3px;}
 .border-t-3{border-top-width:3px;}
 .border-b-3{border-bottom-width:3px;}
-=======
->>>>>>> 9c5115c0bfeb1f867450c7fcc985e0bfd84b19d8
