@@ -10,8 +10,8 @@ import logoIDE from '../../icons/logoIDE.svg';
 
 export default function Starters() {
   return (
-    <div className="mt-40 text-primary">
-        <div className="block text-center text-5xl mb-20">
+    <div className="pt-40 pb-40 text-primary">
+        <div className="block text-center text-6xl mb-20">
             CONHECENDO OS STARTERS
         </div>
         <div className="
@@ -65,6 +65,8 @@ export default function Starters() {
                 rounded-3xl 
                 flex
                 justify-center
+                cursor-pointer
+                cursor-pointer
             ">
                 <Image className="w-16" src={logoIDE} alt="IDE logo" />
             </div>

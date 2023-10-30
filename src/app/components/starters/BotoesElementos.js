@@ -26,6 +26,7 @@ export default function BotoesElementos() {
             hover:scale-105
             transition-all
             duration-500
+            cursor-pointer
             ">
             <Image className="w-32" src={BotaoAgua} alt="Elemento Água"/>
         </div>
@@ -40,6 +41,7 @@ export default function BotoesElementos() {
             hover:scale-105
             transition-all
             duration-500
+            cursor-pointer
             ">
             <Image className="w-32" src={BotaoGrama} alt="Elemento Grama"/>
         </div>
@@ -54,6 +56,7 @@ export default function BotoesElementos() {
             hover:scale-105
             transition-all
             duration-500
+            cursor-pointer
             ">
             <Image className="w-32" src={BotaoFogo} alt="Elemento Fogo"/>
         </div>
