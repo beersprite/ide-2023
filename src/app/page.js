@@ -6,10 +6,10 @@ import Sobre from './components/sobre/Sobre';
 export default function Home() {
   return (
     <>
-      <Inicio />
-      <Starters/>
-      <Sobre/>
-      <Footer />
+      <Inicio id="inicio" />
+      <Starters id="starters" />
+      <Sobre id="sobre" />
+      <Footer id="footer" />
     </>
   );
 }
