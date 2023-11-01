@@ -7,10 +7,10 @@ import tituloPoke from '../../../public/img/titulo-poke.svg';
 export default function Inicio() {
   return (
     <div className="bg-primary flex items-center justify-center w-fit md:w-full">
-      <div className="container flex flex-col sm:grid sm:grid-cols-5 gap-16 h-min min-w-[16rem] max-w-6xl m-14 2xl:-translate-x-24 pixelated">
+      <div className="container flex flex-col md:grid md:grid-cols-5 gap-16 h-min min-w-[16rem] max-w-6xl lg:max-w-[70%] xl:max-w-[65%] md:-translate-x-[5%] m-14 pixelated">
         <Image src={nekoAnotando} alt="Neko Anotando" className="col-span-3" />
-        <div className="col-span-2 flex flex-col justify-center gap-10 font-title text-white">
-          <div className="flex flex-col gap-3 text-9xl leading-none text-shadow-lg select-none">
+        <div className="col-span-2 flex flex-col justify-center gap-7 mx-[15%] mb-[15%] md:m-0">
+          <div className="flex flex-col gap-3">
             <Image src={tituloPoke} alt="Póke" />
             <Image src={tituloIDEx} alt="IDEx" />
           </div>
