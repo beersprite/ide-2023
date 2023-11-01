@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import StartersInicio from './StartersInicio.js';
 import StartersDetail from './StartersDetail.js';
 
+
 let pokemons = require('../../../../content/pokemons.json');
 
 export default function Starters() {

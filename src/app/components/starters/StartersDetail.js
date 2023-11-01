@@ -94,8 +94,6 @@ return (
                         rounded-4xl 
                         flex
                         justify-center
-                        cursor-pointer
-                        cursor-pointer
                         py-5
                         px-10
                         text-0_5xl
