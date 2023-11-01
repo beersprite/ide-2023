@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --white: #FFF;
+  --primary: #603B88;
+  --secondary: #B22559;
+  --grey: #353535;
+  --darkgray: #242424;
+  --blue: #3B6388;
+  --green: #3B8863;
+  --red: #AD3F3F;
+}
+
 @layer utilities {
   .hover-scale {
     transform: scale(1);
@@ -32,3 +43,7 @@ body {
 .border-l-3{border-left-width:3px;}
 .border-t-3{border-top-width:3px;}
 .border-b-3{border-bottom-width:3px;}
+
+.rounded-4xl{
+  border-radius: 2.5rem;
+}

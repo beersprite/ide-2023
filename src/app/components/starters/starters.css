@@ -1,3 +1,27 @@
 .imagemEspelhada{
     transform: scaleX(-1);
 }
+.pokemonInicial{
+    width:100px;
+    height:100px;
+    border:solid 3px;
+    border-radius:1rem;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.iconeElementos{
+    transition: all 0.5s ease-out;
+    cursor:pointer;
+    position:relative;
+    top:0;
+}
+.iconeElementos:hover{
+    transition: all 0.5s ease-out;
+    top:-10px;
+}
+.containerGeralStarter{
+    max-width:1800px;
+}
