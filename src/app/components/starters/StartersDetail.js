@@ -4,8 +4,8 @@ import React, {useState, useEffect} from 'react';
 import BotoesElementos from './BotoesElementos.js';
 import './starters.css';
 
-import GatoDormindo from '../../icons/Starters/GatoDormindo.svg';
-import GatoSorrindo from '../../icons/Starters/GatoSorrindo.svg';
+import GatoDormindo from '../../icons/Starters/gatoDormindo.svg';
+import GatoSorrindo from '../../icons/Starters/gatoSorrindo.svg';
 import Aspas from '../../icons/Starters/aspas.svg';
 
 export default function StartersDetail(props) {
