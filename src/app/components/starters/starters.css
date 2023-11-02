@@ -4,8 +4,6 @@
 .pokemonInicial{
     width:100px;
     height:100px;
-    border:solid 3px;
-    border-radius:1rem;
     padding:20px;
     display:flex;
     align-items:center;

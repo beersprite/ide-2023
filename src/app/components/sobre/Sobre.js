@@ -3,9 +3,7 @@ import React from 'react';
 import GatoMaoPraCima from '../../icons/Sobre/gatoMaoPraCima.svg';
 import logoIDE from '../../icons/logoIDE.svg';
 
-import './sobre.css';
-
-export default function Sobre({ ...props }) {
+export default function Sobre({...props}) {
   return (
     <div
       className="
@@ -14,6 +12,8 @@ export default function Sobre({ ...props }) {
         px-10
         flex
         justify-center
+        w-full
+        max-lg:text-center
     "
       {...props}
     >
@@ -41,12 +41,12 @@ export default function Sobre({ ...props }) {
                 flex
                 justify-center
                 flex-wrap
-                containerSobreResponsividade
-            "
-        >
-          <div
-            style={{ borderLeftWidth: 0.7 + 'vw' }}
-            className="
+                max-md:flex-col
+                max-md:items-center
+            ">
+                <div 
+                style={{borderLeftWidth:0.7 + "vw"}}
+                className="
                     w-1/2
                     bg-darkgray
                     border-block
@@ -57,6 +57,9 @@ export default function Sobre({ ...props }) {
                     items-center
                     px-5
                     py-10
+                    max-md:w-full
+                    max-md:mb-10
+                    max-md:text-0_5xl
                 "
           >
             <div className="text-white text-xl">

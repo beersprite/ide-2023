@@ -11,13 +11,17 @@ import tailwindConfig from '../../../../tailwind.config.js'
 
 const {theme} = resolveConfig(tailwindConfig)
 
-
 export default function BotoesElementos(props) {
+    // ========== Declaração da cor do tema ==========
+    const corPrincipal = props.titulo != '' ? props.pokemons[props.titulo].mainColor : "";
+
+    // ========== Aplica filtro do tema em ícones ==========
     if (typeof document !== 'undefined') {
-        let colorDefault = new ColorChange(`.starters${props.titulo}:not(#starters${props.titulo}${props.titulo})`);
-        colorDefault.setColor(props.titulo != '' ? props.pokemons[props.titulo].mainColor : "")
+        let imagemCorDefault = new ColorChange(`.starters${props.titulo}:not(#starters${props.titulo}${props.titulo})`);
+        imagemCorDefault.setColor(corPrincipal);
     }
 
+    // ========== Mostra a página selecionada pelo clique ==========
     function ocultaStarters(nomeElementoVisivel){
         var arrayElementos = Array.from(document.getElementsByClassName('containerGeralStarter'))
         arrayElementos.map((elemento)=>{
@@ -25,42 +29,41 @@ export default function BotoesElementos(props) {
         })
         document.getElementById(`idContainerGeral${nomeElementoVisivel}`).style.display= "block";
     }
-    
+
   return (
     <div
     style={{gap:"10px"}}
     className="
         flex
         justify-center
-
+        max-sm:flex-wrap
     ">
         <div className="
              w-1/3
              flex
              flex-col
+             max-sm:w-full
         ">
             <p className='text-xl text-center mb-2'>{props.botoesLegenda ? "AGUA" : ""}</p>
             <div 
                 style={
                     {
-                        borderColor:
-                            (props.titulo != '' ? props.pokemons[props.titulo].mainColor : theme.colors['primary']),
                         backgroundColor:
-                            (props.titulo == "AGUA" ? props.pokemons[props.titulo].mainColor : "")
+                            (props.titulo == "AGUA" ? corPrincipal : ""),
+                        "--data-color":corPrincipal
                     }
                 } 
                 onClick={()=>{ocultaStarters("AGUA")}} 
                 className="
-                    w-full
-                    border-solid 
-                    border-3
-                    rounded-full
+                    w-ful
                     flex
                     justify-center
                     hover:scale-[1.02]
                     transition-all
                     duration-500
                     cursor-pointer
+                    pixel-corners-n2
+                    h-20
                 ">
                 <Image  
                     style={
@@ -77,30 +80,28 @@ export default function BotoesElementos(props) {
              w-1/3
              flex
              flex-col
+             max-sm:w-full
         ">
             <p className='text-xl text-center mb-2'>{props.botoesLegenda ? "PLANTA" : ""}</p>
             <div 
                 style={
                     {
-                        borderColor:
-                            (props.titulo != '' ? props.pokemons[props.titulo].mainColor : theme.colors['primary']),
                         backgroundColor:
-                            (props.titulo == "PLANTA" ? props.pokemons[props.titulo].mainColor : "")
-                    
+                            (props.titulo == "PLANTA" ? corPrincipal : ""),
+                        "--data-color":corPrincipal
                     }
                 } 
                 onClick={()=>{ocultaStarters("PLANTA")}} 
                 className="
                     w-full
-                    border-solid 
-                    border-3
-                    rounded-full 
                     flex
                     justify-center
                     hover:scale-[1.02]
                     transition-all
                     duration-500
                     cursor-pointer
+                    pixel-corners-n2
+                    h-20
                 ">
                 <Image 
                     style={
@@ -116,30 +117,28 @@ export default function BotoesElementos(props) {
              w-1/3
              flex
              flex-col
+             max-sm:w-full
         ">
             <p className='text-xl text-center mb-2'>{props.botoesLegenda ? "FOGO" : ""}</p>
             <div 
                 style={
                     {
-                        borderColor:
-                            (props.titulo != '' ? props.pokemons[props.titulo].mainColor : theme.colors['primary']),
                         backgroundColor:
-                            (props.titulo == "FOGO" ? props.pokemons[props.titulo].mainColor : "")
-                    
+                            (props.titulo == "FOGO" ? corPrincipal : ""),
+                        "--data-color":corPrincipal
                     }
                 } 
                 onClick={()=>{ocultaStarters("FOGO")}} 
                 className="
                     w-full
-                    border-solid 
-                    border-3
-                    rounded-full 
                     flex
                     justify-center
                     hover:scale-[1.02]
                     transition-all
                     duration-500
                     cursor-pointer
+                    pixel-corners-n2
+                    h-20
                 ">
                 <Image 
                     style={
