@@ -1,11 +1,11 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import styles from './form.module.css';
 import MyImputs from '../inputs/input';
 
-const OurForm = () => {
+const OurForm = ({ ...props }) => {
   const [formValues, setFormValues] = useState({
-    pokemon: ''
+    pokemon: '',
   });
 
   const handleChange = (e) => {
@@ -21,7 +21,7 @@ const OurForm = () => {
   };
 
   return (
-    <div className={styles.formSection}>
+    <div className={styles.formSection} {...props}>
       <div className={styles.container}>
         <h3 className={styles.title}>Envie uma mensagem para nós:</h3>
         <form className={styles.formulario} onSubmit={handleSubmit}>
