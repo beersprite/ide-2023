@@ -3,7 +3,7 @@ import ScrollLink from '../utils/ScrollLink.js';
 
 const Navbar = () => {
   return (
-    <div className={styles.navbarSection}>
+    <div className="w-100 bg-darkgray/90 top-0 left-0 z-40 sticky font-title backdrop-blur">
       <div className={styles.container}>
         <nav className={styles.navbar}>
           <ScrollLink sectionId="inicio">
@@ -21,7 +21,7 @@ const Navbar = () => {
         </nav>
       </div>
     </div>
-    );
+  );
 };
 
 export default Navbar;
