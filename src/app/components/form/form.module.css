@@ -1,0 +1,30 @@
+.formSection{
+  padding: 160px 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.title{
+  color: #5b467e;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.submitButton{
+  border: 1px solid #372743;
+  padding: 10px 170px;
+  color: #5b467e;
+}
