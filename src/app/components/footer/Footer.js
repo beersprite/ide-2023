@@ -3,9 +3,9 @@ import IDEPixelLogo from '../../../../public/img/logo-pixelado-branco.png';
 import Image from 'next/image';
 import React from 'react';
 
-export default function Footer() {
+export default function Footer({ ...props }) {
   return (
-    <footer className="p-14 bg-grey">
+    <footer className="p-14 bg-grey" {...props}>
       <div className="max-w-screen-xl mx-auto flex flex-col items-center">
         <IconBar />
         <div className="text-center text-white">

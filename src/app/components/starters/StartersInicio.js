@@ -3,7 +3,7 @@ import React from 'react';
 import BotoesElementos from './BotoesElementos';
 
 import './starters.css';
-import GatoDormindo from '../../icons/Starters/GatoDormindo.svg';
+import GatoDormindo from '../../icons/Starters/gatoDormindo.svg';
 import Aspas from '../../icons/Starters/aspas.svg';
 import logoIDE from '../../icons/logoIDE.svg';
 
