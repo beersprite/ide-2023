@@ -4,8 +4,6 @@ import React from 'react';
 import GatoMaoPraCima from '../../icons/Sobre/gatoMaoPraCima.svg'
 import logoIDE from '../../icons/logoIDE.svg';
 
-import './sobre.css';
-
 export default function Sobre() {
   return (
     <div className="
@@ -14,6 +12,8 @@ export default function Sobre() {
         px-10
         flex
         justify-center
+        w-full
+        max-lg:text-center
     ">
         <div style={{maxWidth:"1800px"}} className="
             flex
@@ -34,7 +34,8 @@ export default function Sobre() {
                 flex
                 justify-center
                 flex-wrap
-                containerSobreResponsividade
+                max-md:flex-col
+                max-md:items-center
             ">
                 <div 
                 style={{borderLeftWidth:0.7 + "vw"}}
@@ -49,6 +50,9 @@ export default function Sobre() {
                     items-center
                     px-5
                     py-10
+                    max-md:w-full
+                    max-md:mb-10
+                    max-md:text-0_5xl
                 ">
                     <div className="text-white text-xl">A IDE é a empresa júnior dos cursos Ciência e Engenharia de Computação da Universidade Federal do Rio Grande do Sul. Formada por alunos interessados em se tornarem empreendedores e profissionais excepcionais, a IDE fornece soluções em software, como sites e sistemas, com preços abaixo do mercado, aliados à excelência da UFRGS, o Instituto de Informática e seus professores, que fornecem apoio técnico e aconselhamento aos estudantes.</div>
                     <Image className="w-16 mt-10 filter grayscale grayscale-100 filter contrast-200 filter invert" src={logoIDE} alt="Logo IDE"/>
