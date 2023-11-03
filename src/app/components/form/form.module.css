@@ -1,16 +1,17 @@
 .formSection{
   display:flex;
   justify-content:center;
+  background-color: white;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.formulario{
+.formulario {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,14 +19,14 @@
   row-gap: 16px;
 }
 
-.title{
+.title {
   color: #5b467e;
   font-size: 32px;
   margin-bottom: 40px;
   margin-top: 160px;
 }
 
-.submitButton{
+.submitButton {
   border: 1px solid #372743;
   padding: 10px 170px;
   color: #5b467e;

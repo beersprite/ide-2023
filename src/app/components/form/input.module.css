@@ -1,10 +1,10 @@
-.inputForm{
+.inputForm {
   border: 1px solid #372743;
   padding: 15px 40px;
   width: 800px;
   color: #372743;
 }
 
-.inputForm::placeholder{
+.inputForm::placeholder {
   color: #968fa1;
 }

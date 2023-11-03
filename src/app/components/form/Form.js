@@ -1,8 +1,9 @@
 'use client';
 import React, { useState, useEffect} from 'react';
 import Image from 'next/image';
+
 import styles from './form.module.css';
-import MyImputs from '../inputs/input';
+import MyImputs from './Input';
 
 let spritesDiglett = require('../../../../content/sprites.json');
 
