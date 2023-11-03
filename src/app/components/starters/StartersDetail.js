@@ -16,7 +16,7 @@ return (
     <div 
         id={`idContainerGeral${props.titulo}`}
         style={{color:corPrincipal, borderColor:corPrincipal}} 
-        className={`containerGeralStarter hidden py-20 px-10 text-${corPrincipal} max-lg:px-5`}
+        className={`containerGeralStarter max-w-[1400px] hidden py-20 px-10 text-${corPrincipal} max-lg:px-5`}
     >
         <div  className="block text-6xl mb-20 max-lg:text-center max-lg:mb-5">
             {props.titulo}

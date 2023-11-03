@@ -1,5 +1,6 @@
 .formSection{
-  padding: 160px 0;
+  display:flex;
+  justify-content:center;
 }
 
 .container{
@@ -21,10 +22,28 @@
   color: #5b467e;
   font-size: 32px;
   margin-bottom: 40px;
+  margin-top: 160px;
 }
 
 .submitButton{
   border: 1px solid #372743;
   padding: 10px 170px;
   color: #5b467e;
+}
+
+.diglettAparecendo {
+  animation: openModal 0.5s ease-out forwards;
+}
+.diglettSumindo {
+  animation: closeModal 0.5s ease-out forwards;
+}
+
+@keyframes openModal {
+  0% { opacity:0;}
+  100% { opacity:1;}
+}
+
+@keyframes closeModal {
+  0% { opacity:1;}
+  100% { opacity:0;}
 }

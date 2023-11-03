@@ -9,7 +9,7 @@ import logoIDE from '../../icons/logoIDE.svg';
 
 export default function StartersInicio(props) {
   return (
-    <div id="idContainerGeral" className="containerGeralStarter py-20 px-10 text-primary max-sm:px-5">
+    <div id="idContainerGeral" className="containerGeralStarter max-w-[1400px] py-20 px-10 text-primary max-sm:px-5">
         <div className="block text-center text-6xl mb-20 max-sm:text-4xl">
             CONHECENDO OS STARTERS
         </div>
@@ -70,17 +70,17 @@ export default function StartersInicio(props) {
                     pokemons={props.pokemons}
                     />
             </div>
+            <a className="w-7/12 max-md:w-full" target="_blank" href="https://www.idejr.com.br">
             <div className="
-                w-7/12
                 flex
                 justify-center
                 cursor-pointer
                 h-24
                 pixel-corners-n1
-                max-md:w-full
             ">
                 <Image className="w-16" src={logoIDE} alt="IDE logo" />
             </div>
+            </a>
         </div>
     </div>
   );

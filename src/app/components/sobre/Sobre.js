@@ -18,11 +18,11 @@ export default function Sobre({...props}) {
       {...props}
     >
       <div
-        style={{ maxWidth: '1800px' }}
         className="
             flex
             flex-col
             items-center
+            max-w-[1400px]
         "
       >
         <h1

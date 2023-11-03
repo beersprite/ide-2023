@@ -1,0 +1,15 @@
+{
+    "DIGLETT": {
+        "sprites": [
+            {"imgUrl": "/img/Sprites/Sprite1.svg"},
+            {"imgUrl": "/img/Sprites/Sprite2.svg"},
+            {"imgUrl": "/img/Sprites/Sprite3.svg"},
+            {"imgUrl": "/img/Sprites/Sprite4.svg"},
+            {"imgUrl": "/img/Sprites/Sprite5.svg"},
+            {"imgUrl": "/img/Sprites/Sprite6.svg"},
+            {"imgUrl": "/img/Sprites/Sprite7.svg"},
+            {"imgUrl": "/img/Sprites/Sprite8.svg"},
+            {"imgUrl": "/img/Sprites/Sprite9.svg"}
+        ]
+    }
+}
