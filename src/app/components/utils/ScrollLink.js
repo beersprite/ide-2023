@@ -1,12 +1,14 @@
 'use client';
 
-export default function ScrollLink({ sectionId, children }) {
-  function handleScroll(e) {
-    e.preventDefault();
-
+export default function ScrollLink({ sectionId, children, ...props }) {
+  function handleScroll() {
     const element = document.getElementById(sectionId);
     element.scrollIntoView({ behavior: 'smooth' });
   }
 
-  return <div onClick={handleScroll}>{children}</div>;
+  return (
+    <span onClick={handleScroll} {...props}>
+      {children}
+    </span>
+  );
 }

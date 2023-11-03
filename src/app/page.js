@@ -1,7 +1,7 @@
 import Footer from './components/footer/Footer';
 import Inicio from './components/Inicio';
-import Navbar from './components/navbar/navbar.js';
-import OurForm from './components/form/form.js';
+import Navbar from './components/navbar/Navbar.js';
+import OurForm from './components/form/Form.js';
 import Sobre from './components/Sobre';
 import Starters from './components/starters/Starters';
 

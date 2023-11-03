@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --white: #FFF;
-  --primary: #603B88;
-  --secondary: #B22559;
+:root {
+  --white: #fff;
+  --primary: #603b88;
+  --secondary: #b22559;
   --grey: #353535;
-  --darkgray: #242424;
-  --blue: #3B6388;
-  --green: #3B8863;
-  --red: #AD3F3F;
+  --darkgrey: #242424;
+  --blue: #3b6388;
+  --green: #3b8863;
+  --red: #ad3f3f;
 }
 
 @layer utilities {
@@ -28,8 +28,8 @@
   }
 }
 
-html{
-  width:auto;
+html {
+  width: auto;
 }
 
 body {
@@ -41,14 +41,26 @@ body {
 
 /*================== Classes extras complementando o tailwind ===================*/
 
-.text-0_5xl { font-size: 1rem; }
-.border-3{border-width:3px;}
-.border-r-3{border-right-width:3px;}
-.border-l-3{border-left-width:3px;}
-.border-t-3{border-top-width:3px;}
-.border-b-3{border-bottom-width:3px;}
+.text-0_5xl {
+  font-size: 1rem;
+}
+.border-3 {
+  border-width: 3px;
+}
+.border-r-3 {
+  border-right-width: 3px;
+}
+.border-l-3 {
+  border-left-width: 3px;
+}
+.border-t-3 {
+  border-top-width: 3px;
+}
+.border-b-3 {
+  border-bottom-width: 3px;
+}
 
-.rounded-4xl{
+.rounded-4xl {
   border-radius: 2.5rem;
 }
 
@@ -56,7 +68,8 @@ body {
 
 .pixel-corners-n1,
 .pixel-corners-n1--wrapper {
-  clip-path: polygon(0px calc(100% - 16px),
+  clip-path: polygon(
+    0px calc(100% - 16px),
     4px calc(100% - 16px),
     4px calc(100% - 12px),
     8px calc(100% - 12px),
@@ -91,7 +104,8 @@ body {
     8px 12px,
     4px 12px,
     4px 16px,
-    0px 16px);
+    0px 16px
+  );
   position: relative;
 }
 .pixel-corners-n1 {
@@ -103,7 +117,8 @@ body {
 }
 .pixel-corners-n1--wrapper .pixel-corners-n1 {
   display: block;
-  clip-path: polygon(4px 16px,
+  clip-path: polygon(
+    4px 16px,
     8px 16px,
     8px 12px,
     12px 12px,
@@ -130,13 +145,15 @@ body {
     12px calc(100% - 12px),
     8px calc(100% - 12px),
     8px calc(100% - 16px),
-    4px calc(100% - 16px));
+    4px calc(100% - 16px)
+  );
 }
 .pixel-corners-n1::after,
 .pixel-corners-n1--wrapper::after {
-  content: "";
+  content: '';
   position: absolute;
-  clip-path: polygon(0px calc(100% - 16px),
+  clip-path: polygon(
+    0px calc(100% - 16px),
     4px calc(100% - 16px),
     4px calc(100% - 12px),
     8px calc(100% - 12px),
@@ -203,12 +220,13 @@ body {
     8px calc(100% - 16px),
     4px calc(100% - 16px),
     4px 50%,
-    0px 50%);
+    0px 50%
+  );
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background:var(--data-color, var(--primary));
+  background: var(--data-color, var(--primary));
   display: block;
   pointer-events: none;
 }
@@ -216,11 +234,10 @@ body {
   margin: -4px;
 }
 
-
-
 .pixel-corners-n2,
 .pixel-corners-n2--wrapper {
-  clip-path: polygon(0px calc(100% - 28px),
+  clip-path: polygon(
+    0px calc(100% - 28px),
     4px calc(100% - 28px),
     4px calc(100% - 20px),
     8px calc(100% - 20px),
@@ -263,7 +280,8 @@ body {
     8px 20px,
     4px 20px,
     4px 28px,
-    0px 28px);
+    0px 28px
+  );
   position: relative;
 }
 .pixel-corners-n2 {
@@ -275,7 +293,8 @@ body {
 }
 .pixel-corners-n2--wrapper .pixel-corners-n2 {
   display: block;
-  clip-path: polygon(4px 28px,
+  clip-path: polygon(
+    4px 28px,
     8px 28px,
     8px 20px,
     12px 20px,
@@ -310,13 +329,15 @@ body {
     12px calc(100% - 20px),
     8px calc(100% - 20px),
     8px calc(100% - 28px),
-    4px calc(100% - 28px));
+    4px calc(100% - 28px)
+  );
 }
 .pixel-corners-n2::after,
 .pixel-corners-n2--wrapper::after {
-  content: "";
+  content: '';
   position: absolute;
-  clip-path: polygon(0px calc(100% - 28px),
+  clip-path: polygon(
+    0px calc(100% - 28px),
     4px calc(100% - 28px),
     4px calc(100% - 20px),
     8px calc(100% - 20px),
@@ -399,12 +420,13 @@ body {
     8px calc(100% - 28px),
     4px calc(100% - 28px),
     4px 50%,
-    0px 50%);
+    0px 50%
+  );
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background:var(--data-color, var(--primary));
+  background: var(--data-color, var(--primary));
   display: block;
   pointer-events: none;
 }
@@ -412,12 +434,10 @@ body {
   margin: -4px;
 }
 
-
-
-
 .pixel-corners-n3,
 .pixel-corners-n3--wrapper {
-  clip-path: polygon(0px calc(100% - 44px),
+  clip-path: polygon(
+    0px calc(100% - 44px),
     4px calc(100% - 44px),
     4px calc(100% - 36px),
     8px calc(100% - 36px),
@@ -496,7 +516,8 @@ body {
     8px 36px,
     4px 36px,
     4px 44px,
-    0px 44px);
+    0px 44px
+  );
   position: relative;
 }
 .pixel-corners-n3 {
@@ -508,7 +529,8 @@ body {
 }
 .pixel-corners-n3--wrapper .pixel-corners-n3 {
   display: block;
-  clip-path: polygon(8px 48px,
+  clip-path: polygon(
+    8px 48px,
     12px 48px,
     12px 40px,
     16px 40px,
@@ -583,13 +605,15 @@ body {
     16px calc(100% - 40px),
     12px calc(100% - 40px),
     12px calc(100% - 48px),
-    8px calc(100% - 48px));
+    8px calc(100% - 48px)
+  );
 }
 .pixel-corners-n3::after,
 .pixel-corners-n3--wrapper::after {
-  content: "";
+  content: '';
   position: absolute;
-  clip-path: polygon(0px calc(100% - 44px),
+  clip-path: polygon(
+    0px calc(100% - 44px),
     4px calc(100% - 44px),
     4px calc(100% - 36px),
     8px calc(100% - 36px),
@@ -748,12 +772,13 @@ body {
     12px calc(100% - 48px),
     8px calc(100% - 48px),
     8px 50%,
-    0px 50%);
+    0px 50%
+  );
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background:var(--data-color, var(--primary));
+  background: var(--data-color, var(--primary));
   display: block;
   pointer-events: none;
 }

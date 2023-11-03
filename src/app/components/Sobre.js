@@ -49,32 +49,29 @@ export default function Sobre({ ...props }) {
             style={{ borderLeftWidth: 0.7 + 'vw' }}
             className="
                     w-1/2
-                    bg-darkgray
+                    bg-darkgrey
                     border-block
                     border-secondary
                     flex
                     flex-col
                     justify-between
                     items-center
-                    px-10
+										px-6
+                    md:px-10
                     py-16
                     max-md:w-full
                     max-md:mb-10
                     max-md:text-0_5xl
                 "
           >
-            <div className="text-white text-2xl">
+            <div className="text-white text-lg md:text-2xl">
               A IDE é a empresa júnior dos cursos Ciência e Engenharia de Computação da Universidade Federal do Rio
               Grande do Sul. Formada por alunos interessados em se tornarem empreendedores e profissionais excepcionais,
               a IDE fornece soluções em software, como sites e sistemas, com preços abaixo do mercado, aliados à
               excelência da UFRGS, o Instituto de Informática e seus professores, que fornecem apoio técnico e
               aconselhamento aos estudantes.
             </div>
-            <Image
-              className="w-16 mt-10 filter grayscale grayscale-100 contrast-200 invert"
-              src={logoIDE}
-              alt="Logo IDE"
-            />
+            <Image className="w-16 mt-10 brightness-0 invert" src={logoIDE} alt="Logo IDE" />
           </div>
           <div
             className="
@@ -83,7 +80,7 @@ export default function Sobre({ ...props }) {
                     justify-center
                 "
           >
-            <Image className="w-10/12" src={GatoMaoPraCima} alt="Elemento Água" />
+            <Image className="w-10/12 pixelated" src={GatoMaoPraCima} alt="Neko mão pra cima" />
           </div>
         </div>
       </div>

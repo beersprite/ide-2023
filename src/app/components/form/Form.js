@@ -1,7 +1,8 @@
 'use client';
+
 import React, { useState } from 'react';
 import styles from './form.module.css';
-import MyImputs from '../inputs/input';
+import MyImputs from './Input';
 
 const OurForm = ({ ...props }) => {
   const [formValues, setFormValues] = useState({
